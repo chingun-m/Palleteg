@@ -1,0 +1,2 @@
+# Palleteg
+Color palette generator

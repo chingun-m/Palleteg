@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palleteg</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="palleteg.png">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Palleteg 🌊</h1>
+            <p>Generate, lock, copy & save palettes</p>
+        </div>
+        <div class="header-right">
+            <button id="generateBtn" class="btn">Generate</button>
+            <button id="randomizeShades" class="btn">Random Shade</button>
+            <button id="savePalette" class="btn">Save</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="palette"></div>
+
+        <section id="favorites">
+            <h2>
+                <span>Saved Palettes</span>
+                <button id="clearFavs" class="btn" style="display: none;">Clear All</button>
+            </h2>
+            <div id="favList">
+                <div class="empty-state">No saved palettes yet. Click "Save" to store your favorites!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>💡 Tip: Click any hex code to copy it to your clipboard</div>
+        <div id="vibeName">Generating palette...</div>
+    </footer>
+</body>
+</html>
